@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- Comments can be added here -->
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<meta charset="UTF-8" />
+<title>Usain Bolts Final Race</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+ul.bests{
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 14px 16px;
+	 overflow: hidden;
+     color: black;
+	 background-image: url("images/boltbests.jpg");
+    list-style-image: url('images/londonfooter.png');
+     list-style-type: circle;
+    
+
+}
+
+
+
+</style>  
+</head>
+
+<body>
+<!--creates the header-->
+<div id="container">
+<div id="header">
+<h1 style="margin-bottom:0;text-align:center;width:100%;background-color:lightblue">Usain Bolt's Grand Finale</h1>
+</div>
+
+<!--the nav bar on the left-->
+<div id="nav">
+<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href=#>Bolt's Final Race</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="location.html">The Stadium</a></li>
+		<li><a href="social.html">Our Social Media</a></li>
+  
+		<li><a href="contact.html">Mailing List</a></li>
+          <li><a href="documentation.html">Documentation</a></li>
+          <li><a href="info.html">Information</a></li>
+</ul>
+</div>
+
+
+<div id="content" style="width:85%">
+    
+<div id="bolttimes">
+    
+    <h2>Usain Bolt's Personal Bests:</h2>
+    
+    <ul class="bests">
+        <li>100m: 9.58s (2009)</li>
+        <li>150m: 14.35s (2009)</li>
+        <li>200m: 19.19s (2009)</li>
+        <li>300m: 30.97s (2010)</li>
+    
+    </ul>
+    
+    <p>Not sure how impressive these are? Use the timer below for reference!</p>
+    
+    <h3><time>00:00:00</time></h3>
+<button id="start">start</button>
+<button id="stop">stop</button>
+<button id="clear">clear</button>
+
+    <script>
+ 
+    var h3 = document.getElementsByTagName('h3')[0],
+    start = document.getElementById('start'),
+    stop = document.getElementById('stop'),
+    clear = document.getElementById('clear'),
+    seconds = 0, minutes = 0, hours = 0,
+    t;
+
+function add() {
+    seconds++;
+    if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+            minutes = 0;
+            hours++;
+        }
+    }
+    
+    h3.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+
+    timer();
+}
+function timer() {
+    t = setTimeout(add, 1000);
+}
+timer();
+
+
+/* Start button */
+start.onclick = timer;
+
+/* Stop button */
+stop.onclick = function() {
+    clearTimeout(t);
+}
+
+/* Clear button */
+clear.onclick = function() {
+    h3.textContent = "00:00:00";
+    seconds = 0; minutes = 0; hours = 0;
+}
+</script>
+
+    </div>
+<!-- main content will go here-->
+<h1>Usain Bolt's Final Race</h1>
+<p id="text">
+Bolt retires with 14 world championship medals, which is the most-ever by a male track and field athlete.
+    However, this year in London, he won a bronze medal in the men's 100 meters after finishing third behind USA's Justin Gatlin and Christian Coleman.
+</p>
+    
+<h1>
+Injury    
+</h1>
+
+<p>
+Running in the final leg of the 4x100m relay race for Jamaica, Bolt pulled up with around 60m to go and tumbled to the track in agony.
+
+Stewards offered to help Bolt with a wheelchair but the sprint legend decided to limp away and applaud the crowd as he made his way around the London Stadium with his team-mates.
+    </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qhVsHVMrL5w?rel=0&amp;start=2" allowfullscreen></iframe>
+
+
+</div>
+
+
+    
+
+    
+<!--creates the footer-->
+<div id="footer">
+<p>Developed by Gary Hughes (B00330262)</p>
+
+
+</div>
+</div> <!-- closes the container div  -->
+
+
+</body>
+
+</html>

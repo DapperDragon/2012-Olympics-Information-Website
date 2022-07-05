@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<meta charset="UTF-8" />
+<title>London Championships</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+<style type="text/css">
+    
+/*Create classes used by slideshow*/
+.mySlides {display:none}
+.demo {cursor:pointer}
+
+
+/* removes the default padding and adds a page wide background*/
+ul{
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 14px 16px;
+	 overflow: hidden;
+	 background-color: white;
+	 background-image: url("images/stadiumopac.png");
+
+}
+
+*/*add nav bar fixed to top of viewer */
+ul{
+	 position: fixed;
+	 top: 0;
+	 width: 100%;
+}
+
+    button {
+  display: inline;
+}
+
+/* adds lines between nav bar items unless it is the last to the right */
+li{
+	 float: left;
+	 border-right: 1px solid black;
+	 background-color: lightblue;
+}
+
+/*for items on the far right of the nav bar */
+#Right
+{
+ border-right: none;
+ border-left: 1px solid black
+}
+
+li a
+{
+	 display: block;
+	 padding: 8px;
+	 text-align: center;
+	 text-decoration: none;
+	 text-color: white;
+
+	}
+
+/*changes the color when the mouse hovers on a nav bar link */
+li a:hover{background-color: white;}
+
+/*defines class for the active page
+as long as a link has the active tag it will have a different
+background colour from the other links */
+.active{background-color: red;}
+
+#body{background-color:lightblue;}
+#container{width: 100%;}
+#header{height: 50px;}
+
+/*Main Section */
+#article{background-color:lightblue;height:110%;width:70%;float:left;text-align:left;}
+
+/*social media bar colors */
+#aside{background-color:#1ebded;height:100%;width:30%;float:left;}
+
+
+
+#h1{margin-bottom:0;text-align:center}
+#h2{text-align:left;}
+    
+#footer{background-color:black;clear:both;text-align:center;width:100%;color:white;position:fixed;right:0;bottom:0;left:0;padding:1rem;text-align:center;}
+
+    
+
+    
+</style>
+</head>
+<body id="body" style="background-color: lightblue">
+<div id="container">
+<div id="header">
+
+<!--List of links to other pages in website -->
+<ul>
+		<li><a href=#>Home</a></li>
+		<li><a href="lastbolt.html">Bolt's Final Race</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="location.html">The Stadium</a></li>
+		<li><a href="social.html">Our Social Media</a></li>
+        <li><a href="contact.html">Mailing List</a></li>
+
+		
+        <li style="float:right" class="Right"><a href="info.html">Info</a></li>
+        <li style="float:right" class="Right"><a href="documentation.html">Documentation</a></li>
+		
+    
+		
+</ul>
+
+
+
+
+</div>
+<div id="article">
+<h1>Welcome</h1>
+<section>
+    
+
+    
+    
+<h2>The World Championships - London 2017</h2>
+<p class="text">
+The championships, held in the London Stadium - also home to the 2012 Olympics, ran from the 4th to the 13th of August 2017.
+This website will tell you about the events that took place and the atheletes that took part in the event which was which solo
+over 600 thousand tickets, and was watched on TV by people all over the world, mainly the UK, US and Canada.
+</p>
+
+<br>
+
+<h2  class="text">Hero the Hedgehog - Everyday Hero and Offical Mascot</h2>
+<p class="text">
+Representing "everday heroes", Hero the Hedgehog was created by then nine-year-old Ellie after she won a childrens scompetetion that was
+organised by Blue Peter.
+</p>
+<img src="images/hedgehog1.jpg" alt="Hedgehog At Rest" style="width:250px;height:300px;">
+<img src="images/hedgehog2.jpg" alt="Hedgehog Taking Part" style="width:550px;height:300px;">
+<br><br><br><br><br><br><br><br><br><br>
+
+    
+</section>
+</div>
+
+<!--the slide show section (ex social media feed)-->
+<div id="aside">
+<!--Slideshow Images -->
+<div class="w3-content" style="max-width:1200px">
+  <img class="mySlides" src="images/stadiumpyro.jpg" alt="Stadium Pyro" style="width:100%; height:250px">
+  <img class="mySlides" src="images/boltcover.jpg" alt="Bolt" style="width:100%; height:250px">
+  <img class="mySlides" src="images/trackcover.jpg" alt="The Track" style="width:100%; height:250px">
+  <img class="mySlides" src="images/boltpyro.jpg" alt="Bolt Pyro" style="width:100%; height:250px">
+  <img class="mySlides" src="images/stadiumday.jpg" alt="Stadium During Day" style="width:100%; height:250px">
+  <img class="mySlides" src="images/stadiumnight.jpg" alt="Stadium During Night" style="width:100%; height:250px">
+
+<!--Slideshow Image Previewa -->
+<div class="w3-row-padding w3-section">
+    
+    <p style="text-align: center">Click Us to Change the Picture!</p>
+    
+    <div class="w3-col s4">
+    <img class="demo w3-opacity w3-hover-opacity-off" src="images/stadiumpyro.jpg" alt="Stadium Pyro" style="width:100%; height:50px" onclick="currentDiv(1)">
+    </div>
+    
+    <div class="w3-col s4">
+    <img class="demo w3-opacity w3-hover-opacity-off" src="images/boltcover.jpg" alt="Usain Bolt" style="width:100%; height:50px" onclick="currentDiv(2)">
+    </div>
+    
+    <div class="w3-col s4">
+    <img class="demo w3-opacity w3-hover-opacity-off" src="images/trackcover.jpg" alt="The Track" style="width:100%; height:50px" onclick="currentDiv(3)">
+    </div>
+    
+    <div class="w3-col s4">
+    <img class="demo w3-opacity w3-hover-opacity-off" src="images/boltpyro.jpg" alt="Bolt Pyro" style="width:100%; height:50px" onclick="currentDiv(4)">
+    </div>
+    
+    <div class="w3-col s4">
+    <img class="demo w3-opacity w3-hover-opacity-off" src="images/stadiumday.jpg" alt="Stadium During Day" style="width:100%; height:50px" onclick="currentDiv(5)">
+    </div>
+    
+    <div class="w3-col s4">
+    <img class="demo w3-opacity w3-hover-opacity-off" src="images/stadiumnight.jpg" alt="Stadium During Night" style="width:100%; height:50px" onclick="currentDiv(6)">
+    </div>
+</div>
+</div>
+
+<!--Slideshow Javascript-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+</div>
+<br><br><br><br><br>
+<!-- the footer -->
+<div id="footer">
+<p class="text">Developed by Gary Hughes (B00330262)</p>
+    
+    <button type="button" onclick="largerTextFunction()">Increase Text Size</button>
+<p class="text">Having Trouble Reading the Text?</p>
+ <button type="button" onclick="smallerTextFunction()">Decrease Text Size</button>
+    
+<script>
+function largerTextFunction() {
+    document.getElementById("body").style.fontSize = "larger";
+}
+   function smallerTextFunction() {
+    document.getElementById("body").style.fontSize = "smaller";
+} 
+    
+</script>
+
+</div>
+</div> <!-- closes the container div  -->
+</body>
+</html> 

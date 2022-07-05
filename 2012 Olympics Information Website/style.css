@@ -1,0 +1,21 @@
+/*style.css*/
+/*creates classes with set styling */
+
+body{background-color: black;width:100%;right: 0;bottom: 0;left: 0;padding: 0;}
+#container{width:100%;right: 0;bottom: 0;left: 0;padding: 0;}
+#header{background-color: lightblue;list-style-type: none;margin: 0;padding: 14px 16px;overflow: hidden;background-color: white;background-image: url("images/stadiumopac.png");}
+#nav{background-color: lightblue;height:800px;width:15%;float:left;text-align:left; overflow:auto}
+#content{color:white;background-color:black;max-height:100%;width:70%;float:left;}
+#aside{background-color:#1ebded;height:100%;width:40%;float:left;}
+#bolttimes{background-color:#1ebded;height:100%;width:20%;float:right;margin: 0;padding: 14px 16px;overflow: hidden;}
+#footer {position: fixed;right: 0;bottom: 0;left: 0;padding: 0;background-color: lightblue;text-align: center;overflow: auto;}
+
+
+/*this removes the default style and padding */
+ul{list-style-type: none; margin: 1px; padding: 0; width: 200px;}
+li a {display: block;color: #000;padding: 8px 16px;text-decoration: none;}
+/*changes the appearance of text when the mouse hovers over it*/
+li a:hover {background-color: darkblue; color: white;
+
+
+

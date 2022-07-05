@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Comments can be added here -->
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<meta charset="UTF-8" />
+<title>The Stadium</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+    
+<style>
+#myDIV{
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 14px 16px;
+	 overflow: hidden;
+     color: black;
+    background-image: url("images/bigben.jpg");
+    list-style-image: url('images/londonfooter.png');	 
+    }
+    
+</style>
+</head>
+
+<body>
+<!--creates the header-->
+<div id="container">
+<div id="header">
+<h1 style="margin-bottom:0;text-align:center;background-color:lightblue">The Stadium</h1>
+</div>
+
+<!--the nav bar on the left-->
+<div id="nav">
+<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="lastbolt.html">Bolt's Final Race</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href=#>The Stadium</a></li>
+		<li><a href="social.html">Our Social Media</a></li>
+        
+		<li><a href="contact.html">Mailing List</a></li>
+    <li><a href="documentation.html">Documentation</a></li>
+    <li><a href="info.html">Information</a></li>
+</ul>
+</div>
+
+<div id="content" style="width:85%">
+    
+<div id="bolttimes">
+    
+        <button onclick="myFunction()">Click here to see other attractions to see while you are in the city!</button>
+<br><br><br>
+    
+<div id="myDIV" style="display: none">
+        <ol>
+            <li><a href="https://www.visitsealife.com/london/" style="color:lightblue">Sea Life London</a></li>
+            <li><a href="https://www.wbstudiotour.co.uk/home" style="color:lightblue">Harry Potter Studio Tour</a></li>
+            <li><a href="https://www.londoneye.com/" style="color:lightblue">The London Eye</a></li>
+            <li><a href="https://www.madametussauds.com/london/en/" style="color:lightblue">Madame Tussauds</a></li>
+            <li><a href="https://www.thedungeons.com/london/en/" style="color:lightblue">The London Dungeon</a></li>
+        </ol>
+
+</div>
+    </div>
+
+    <script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+<!-- main content will go here-->
+    
+<h2>An interactive map of the area</h2>
+    
+<p>This map shows the immediate area and will allow you to get directions to and around the area</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8668.314175009911!2d-0.01902577561742922!3d51.53798596334616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d6975e8b559%3A0xe7fca44605b6ce94!2sLondon+Stadium!5e1!3m2!1sen!2suk!4v1511218772418" width="600" height="450" style="border:0" allowfullscreen></iframe>
+
+
+
+
+
+   <h2>CGI Fly Over</h2>
+<p>This Video was used to show the public how the park and sorroundings would look once construction was complete</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fV2HSNYb230" allowfullscreen></iframe>
+    <br><br><br><br><br>
+
+    
+
+
+
+    
+ 
+
+ 
+
+    </div>
+        
+<!--creates the footer-->
+<div id="footer">
+<p>Developed by Gary Hughes (B00330262)</p>
+</div>
+</div> <!-- closes the container div  -->
+
+
+</body>
+
+</html>
